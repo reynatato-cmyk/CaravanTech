@@ -1,6 +1,14 @@
 import Image from "next/image";
 import CampoCarousel from "@/components/CampoCarousel";
 
+const stats = [
+  { value: "+40%", label: "Reducción en tiempos de gestión del rodeo" },
+  { value: "100%", label: "Trazabilidad individual de cada animal" },
+  { value: "0", label: "Pérdidas por animales fuera de zona" },
+];
+
+const delayClasses = ["reveal-delay-1", "reveal-delay-2", "reveal-delay-3"];
+
 
 export default function ElPiloto() {
   return (
@@ -42,27 +50,26 @@ export default function ElPiloto() {
               </div>
             </div>
 
-            {/* Testimonial */}
-            <div className="reveal reveal-delay-1 relative">
-              <span
-                className="absolute -top-6 -left-2 text-rt-green/20 font-display font-bold leading-none select-none"
-                style={{ fontSize: "8rem" }}
-                aria-hidden="true"
-              >
-                "
-              </span>
-              <blockquote className="relative">
-                <p className="apple-body text-green-100/85 text-lg leading-relaxed mb-6">
-                  Nosotros venimos manejando el campo hace décadas y siempre dijimos que los datos los tenés en la cabeza o en el cuaderno. Cuando vimos que el sistema te avisa que una vaca dejó de comer bien o de moverse antes que vos te des cuenta yendo al potrero... ahí lo entendimos. Agarramos un animal a tiempo que si no, lo perdíamos.
-                </p>
-                <footer className="flex items-center gap-3">
-                  <div className="w-8 h-px bg-rt-green/50" />
-                  <div>
-                    <p className="text-white font-semibold text-sm">Familia De Laurentiis</p>
-                    <p className="text-green-200/50 text-xs">La Escondida · Lincoln, Buenos Aires</p>
-                  </div>
-                </footer>
-              </blockquote>
+            <p className="apple-body text-green-100/70 mb-10">
+              El primer despliegue de RodeoTech fue en este establecimiento ganadero real, con necesidades reales. Los resultados confirmaron que la tecnología funciona en el campo argentino.
+            </p>
+
+            {/* Stats */}
+            <div className="grid grid-cols-3 gap-4">
+              {stats.map((s, i) => (
+                <div
+                  key={i}
+                  className={`reveal ${delayClasses[i]} bg-white/8 border border-white/10 rounded-xl p-5`}
+                >
+                  <p
+                    className="apple-headline text-white leading-none mb-2"
+                    style={{ fontSize: "clamp(1.8rem, 3vw, 2.5rem)" }}
+                  >
+                    {s.value}
+                  </p>
+                  <p className="text-green-200/55 text-xs leading-snug">{s.label}</p>
+                </div>
+              ))}
             </div>
           </div>
 
