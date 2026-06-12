@@ -17,13 +17,13 @@ export default function ElPiloto() {
         {/* Header */}
         <div className="mb-16 reveal">
           <p className="text-green-400 text-xs tracking-[0.35em] uppercase mb-4 font-semibold">
-            Caso de éxito
+            Productores que confían en RodeoTech
           </p>
           <h2
             className="apple-headline text-white mb-6"
             style={{ fontSize: "clamp(2.2rem, 4vw, 3.2rem)" }}
           >
-            El piloto
+            Nuestros clientes
           </h2>
         </div>
 
@@ -50,7 +50,7 @@ export default function ElPiloto() {
             </div>
 
             <p className="apple-body text-green-100/70 mb-10">
-              El primer despliegue de RodeoTech fue en este establecimiento ganadero real, con necesidades reales. Los resultados confirmaron que la tecnología funciona en el campo argentino.
+              Productores ganaderos de la Provincia de Buenos Aires que ya adoptaron la tecnología y ven los resultados en tiempo real.
             </p>
 
             {/* Stats */}

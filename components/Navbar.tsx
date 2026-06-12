@@ -38,7 +38,7 @@ export default function Navbar() {
         <nav className="hidden md:flex items-center gap-8 text-[0.7rem] tracking-widest uppercase text-white/55 font-display">
           <a href="#problema" className="hover:text-white transition-colors">El problema</a>
           <a href="#solucion"  className="hover:text-white transition-colors">La solución</a>
-          <a href="#piloto"    className="hover:text-white transition-colors">El piloto</a>
+          <a href="#piloto"    className="hover:text-white transition-colors">Clientes</a>
           <a href="#contacto"  className="hover:text-white transition-colors">Contacto</a>
         </nav>
 
