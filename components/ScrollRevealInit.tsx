@@ -15,7 +15,7 @@ export default function ScrollRevealInit() {
       { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
     );
 
-    const elements = document.querySelectorAll(".reveal");
+    const elements = document.querySelectorAll(".reveal, .product-reveal");
     elements.forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();
