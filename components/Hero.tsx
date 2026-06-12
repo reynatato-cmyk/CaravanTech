@@ -1,14 +1,21 @@
+import Image from "next/image";
 import { WA_URL } from "@/lib/constants";
 
 export default function Hero() {
   return (
-    <section
-      className="relative h-screen min-h-[640px] flex items-center justify-center overflow-hidden"
-      style={{ backgroundImage: "url('/laescondida1.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}
-    >
-      {/* Video 4K a pantalla completa — poster muestra cuando autoplay está bloqueado en mobile */}
+    <section className="relative h-screen min-h-[640px] flex items-center justify-center overflow-hidden">
+      {/* Imagen de fondo optimizada — fallback cuando el video no carga en mobile */}
+      <Image
+        src="/laescondida1.jpg"
+        alt=""
+        fill
+        priority
+        className="object-cover"
+        sizes="100vw"
+      />
+      {/* Video 4K — se superpone sobre la imagen, poster = misma imagen de fallback */}
       <video
-        className="absolute inset-0 w-full h-full object-cover hero-video-zoom"
+        className="absolute inset-0 w-full h-full object-cover hero-video-zoom z-[1]"
         autoPlay
         muted
         loop
@@ -20,7 +27,7 @@ export default function Hero() {
       </video>
 
       {/* Overlay — legibilidad del texto sobre el video */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/25 to-black/80" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/25 to-black/80 z-[2]" />
 
       {/* Intro overlay — se desvanece al cargar */}
       <div className="hero-intro-overlay absolute inset-0 bg-black z-20 pointer-events-none" />
