@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="relative h-screen min-h-[640px] flex items-center justify-center overflow-hidden">
       {/* Video 4K a pantalla completa */}
       <video
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover hero-video-zoom"
         autoPlay
         muted
         loop

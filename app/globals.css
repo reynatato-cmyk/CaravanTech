@@ -104,7 +104,17 @@ body {
   background: radial-gradient(ellipse 80% 60% at 50% 40%, #0f2010 0%, #07090a 100%);
 }
 
+/* ── Hero video zoom-out ── */
+.hero-video-zoom {
+  animation: heroZoomOut 3.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
 /* ── Keyframes ── */
+@keyframes heroZoomOut {
+  from { transform: scale(1.18); }
+  to   { transform: scale(1.0); }
+}
+
 @keyframes fadeInDown {
   from { opacity: 0; transform: translateY(-20px); }
   to   { opacity: 1; transform: translateY(0); }
