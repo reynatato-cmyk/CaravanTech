@@ -1,26 +1,132 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Colors */
+  --color-rt-green: #2E7D32;
+  --color-rt-green-deep: #1B5E20;
+  --color-rt-green-section: #1A3A1C;
+  --color-rt-dark: #0D0D0D;
+  --color-rt-section: #111111;
+
+  /*
+    System font stack — idéntica a la que usa Apple.
+    En macOS e iOS renderiza SF Pro automáticamente.
+    En Windows usa Segoe UI. En Android usa Roboto.
+  */
+  --font-sans:
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Display",
+    "SF Pro Text",
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  --font-display: var(--font-sans);
+  --font-body:    var(--font-sans);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Renderizado subpixel como Apple */
+  text-rendering: optimizeLegibility;
+}
+
+/* ── Escala tipográfica Apple ──────────────────────────────
+   Apple usa tracking negativo en títulos grandes y
+   line-height apretado en headlines.
+   -------------------------------------------------------- */
+.apple-headline {
+  letter-spacing: -0.022em;
+  line-height: 1.05;
+  font-weight: 700;
+}
+
+.apple-subhead {
+  letter-spacing: -0.012em;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.apple-body {
+  letter-spacing: -0.003em;
+  line-height: 1.47;
+  font-size: 1.0625rem; /* 17px, el tamaño de cuerpo de Apple */
+}
+
+/* ── Hero entry animations ── */
+.animate-hero-eyebrow {
+  opacity: 0;
+  animation: fadeInDown 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+}
+
+.animate-hero-title {
+  opacity: 0;
+  animation: fadeInDown 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.55s forwards;
+}
+
+.animate-hero-sub {
+  opacity: 0;
+  animation: fadeIn 0.8s ease 0.9s forwards;
+}
+
+.animate-hero-cta {
+  opacity: 0;
+  animation: fadeIn 0.8s ease 1.15s forwards;
+}
+
+/* ── Scroll reveal ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.reveal-delay-1 { transition-delay: 0.12s; }
+.reveal-delay-2 { transition-delay: 0.24s; }
+.reveal-delay-3 { transition-delay: 0.38s; }
+
+/* ── Hero background placeholder ── */
+.hero-bg {
+  background: radial-gradient(ellipse 80% 60% at 50% 40%, #0f2010 0%, #07090a 100%);
+}
+
+/* ── Keyframes ── */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  .animate-hero-eyebrow,
+  .animate-hero-title,
+  .animate-hero-sub,
+  .animate-hero-cta {
+    animation: none;
+    opacity: 1;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
