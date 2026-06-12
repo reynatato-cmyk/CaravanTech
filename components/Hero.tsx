@@ -18,6 +18,9 @@ export default function Hero() {
       {/* Overlay — legibilidad del texto sobre el video */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/25 to-black/80" />
 
+      {/* Intro overlay — se desvanece al cargar */}
+      <div className="hero-intro-overlay absolute inset-0 bg-black z-20 pointer-events-none" />
+
       {/* ─── Contenido centrado ── */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <p className="animate-hero-eyebrow text-rt-green text-xs tracking-[0.4em] uppercase mb-8 font-semibold">
