@@ -32,7 +32,7 @@ export default function Contacto() {
           RODEO<span className="text-rt-green/50">TECH</span>
         </span>
         <span>Lincoln, Buenos Aires — Argentina</span>
-        <span>© 2025</span>
+        <span>© 2026</span>
       </div>
     </section>
   );

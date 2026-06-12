@@ -12,7 +12,7 @@ export default function ElProblema() {
             className="apple-headline font-bold text-[#1d1d1f] max-w-2xl"
             style={{ fontSize: "clamp(2.2rem, 4vw, 3.2rem)" }}
           >
-            El productor ganadero mediano de hoy
+            Cada año perdés terneros sin saberlo.
           </h2>
         </div>
         <div className="grid md:grid-cols-3 gap-12 md:gap-16">
