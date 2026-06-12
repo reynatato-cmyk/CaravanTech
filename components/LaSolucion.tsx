@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import Image from "next/image";
+import ProductImage from "@/components/ProductImage";
 
 export default function LaSolucion() {
   return (
@@ -38,22 +38,7 @@ export default function LaSolucion() {
           </div>
 
           {/* Product image */}
-          <div className="flex items-center justify-center product-reveal reveal-delay-2">
-            <div className="relative w-full max-w-sm">
-              {/* Glow pulsante de fondo */}
-              <div className="product-glow absolute inset-0 bg-rt-green/15 rounded-3xl blur-3xl scale-110" />
-              <div className="product-float">
-                <Image
-                  src="/caravana.png"
-                  alt="Caravana inteligente Bastó — frente y dorso"
-                  width={520}
-                  height={480}
-                  className="relative z-10 w-full h-auto object-contain drop-shadow-2xl"
-                  priority
-                />
-              </div>
-            </div>
-          </div>
+          <ProductImage />
         </div>
 
         {/* ── Feature cards ── */}
