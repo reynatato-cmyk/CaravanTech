@@ -2,14 +2,18 @@ import { WA_URL } from "@/lib/constants";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen min-h-[640px] flex items-center justify-center overflow-hidden">
-      {/* Video 4K a pantalla completa */}
+    <section
+      className="relative h-screen min-h-[640px] flex items-center justify-center overflow-hidden"
+      style={{ backgroundImage: "url('/laescondida1.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}
+    >
+      {/* Video 4K a pantalla completa — poster muestra cuando autoplay está bloqueado en mobile */}
       <video
         className="absolute inset-0 w-full h-full object-cover hero-video-zoom"
         autoPlay
         muted
         loop
         playsInline
+        poster="/laescondida1.jpg"
         aria-hidden="true"
       >
         <source src="/hero.mp4" type="video/mp4" />
