@@ -1,12 +1,6 @@
 import Image from "next/image";
 import CampoCarousel from "@/components/CampoCarousel";
 
-const stats = [
-  { value: "+40%", label: "Reducción en tiempos de gestión del rodeo" },
-  { value: "100%", label: "Trazabilidad individual de cada animal" },
-  { value: "0", label: "Pérdidas por animales fuera de zona" },
-];
-
 const delayClasses = ["reveal-delay-1", "reveal-delay-2", "reveal-delay-3"];
 
 export default function ElPiloto() {
@@ -49,26 +43,27 @@ export default function ElPiloto() {
               </div>
             </div>
 
-            <p className="apple-body text-green-100/70 mb-10">
-              Productores ganaderos de la Provincia de Buenos Aires que ya adoptaron la tecnología y ven los resultados en tiempo real.
-            </p>
-
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-4">
-              {stats.map((s, i) => (
-                <div
-                  key={i}
-                  className={`reveal ${delayClasses[i]} bg-white/8 border border-white/10 rounded-xl p-5`}
-                >
-                  <p
-                    className="apple-headline text-white leading-none mb-2"
-                    style={{ fontSize: "clamp(1.8rem, 3vw, 2.5rem)" }}
-                  >
-                    {s.value}
-                  </p>
-                  <p className="text-green-200/55 text-xs leading-snug">{s.label}</p>
-                </div>
-              ))}
+            {/* Testimonial */}
+            <div className="reveal reveal-delay-1 relative">
+              <span
+                className="absolute -top-6 -left-2 text-rt-green/20 font-display font-bold leading-none select-none"
+                style={{ fontSize: "8rem" }}
+                aria-hidden="true"
+              >
+                "
+              </span>
+              <blockquote className="relative">
+                <p className="apple-body text-green-100/85 text-lg leading-relaxed mb-6">
+                  Yo era bastante escéptico con todo esto. La primera semana me llegó una alerta de una vaca en celo a las dos de la mañana — mandé al peón al otro día temprano y ya estaba cubierta. Ese ternero solo ya me pagó varias caravanas.
+                </p>
+                <footer className="flex items-center gap-3">
+                  <div className="w-8 h-px bg-rt-green/50" />
+                  <div>
+                    <p className="text-white font-semibold text-sm">Hernán G.</p>
+                    <p className="text-green-200/50 text-xs">Encargado de campo · La Escondida</p>
+                  </div>
+                </footer>
+              </blockquote>
             </div>
           </div>
 
