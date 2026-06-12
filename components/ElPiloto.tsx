@@ -1,7 +1,6 @@
 import Image from "next/image";
 import CampoCarousel from "@/components/CampoCarousel";
 
-const delayClasses = ["reveal-delay-1", "reveal-delay-2", "reveal-delay-3"];
 
 export default function ElPiloto() {
   return (
@@ -54,13 +53,13 @@ export default function ElPiloto() {
               </span>
               <blockquote className="relative">
                 <p className="apple-body text-green-100/85 text-lg leading-relaxed mb-6">
-                  Yo era bastante escéptico con todo esto. La primera semana me llegó una alerta de una vaca en celo a las dos de la mañana — mandé al peón al otro día temprano y ya estaba cubierta. Ese ternero solo ya me pagó varias caravanas.
+                  Nosotros venimos manejando el campo hace décadas y siempre dijimos que los datos los tenés en la cabeza o en el cuaderno. Cuando vimos que el sistema te avisa que una vaca dejó de comer bien o de moverse antes que vos te des cuenta yendo al potrero... ahí lo entendimos. Agarramos un animal a tiempo que si no, lo perdíamos.
                 </p>
                 <footer className="flex items-center gap-3">
                   <div className="w-8 h-px bg-rt-green/50" />
                   <div>
-                    <p className="text-white font-semibold text-sm">Hernán G.</p>
-                    <p className="text-green-200/50 text-xs">Encargado de campo · La Escondida</p>
+                    <p className="text-white font-semibold text-sm">Familia De Laurentiis</p>
+                    <p className="text-green-200/50 text-xs">La Escondida · Lincoln, Buenos Aires</p>
                   </div>
                 </footer>
               </blockquote>
