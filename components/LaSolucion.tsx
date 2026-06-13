@@ -41,24 +41,50 @@ export default function LaSolucion() {
           <ProductImage />
         </div>
 
-        {/* ── Feature cards ── */}
+        {/* ── Tres formas en que Bastó trabaja ── */}
+        <div className="mb-10 reveal">
+          <p className="text-rt-green text-xs tracking-[0.35em] uppercase mb-3 font-semibold">
+            Tecnología en acción
+          </p>
+          <h3 className="apple-headline text-white" style={{ fontSize: "clamp(1.6rem, 3vw, 2.2rem)" }}>
+            Tres formas en que Bastó trabaja para el productor
+          </h3>
+        </div>
         <div className="grid md:grid-cols-3 gap-6 mb-12">
-          <FeatureCard
+          <RichCard
             icon={<GpsIcon />}
-            title="GPS en tiempo real"
-            desc="Sabés exactamente dónde está cada animal en tu campo, desde el celular, a cualquier hora del día."
+            title="Geoposición"
+            subtitle="Ubicación e identificación del ganado en tiempo real"
+            items={[
+              "Ahorra tiempos en la localización y el arreo del ganado",
+              "Control del manejo de hacienda",
+              "Conteo diario de animales",
+              "Prevención del robo de ganado y protección del capital",
+              "Aporta trazabilidad a la cadena productiva",
+            ]}
             delay="reveal-delay-1"
           />
-          <FeatureCard
-            icon={<CycleIcon />}
-            title="Detección de celo automática"
-            desc="El sensor detecta el momento exacto y te manda una alerta. Actuás ese mismo día — sin madrugar, sin recorrer el campo."
+          <RichCard
+            icon={<PastoreoIcon />}
+            title="Pastoreo"
+            subtitle="Monitoreo de patrones de comportamiento en la alimentación"
+            items={[
+              "Detecta cambios en tiempos de pastoreo, bebida, rumia y descanso",
+              "Relaciona alteraciones con menor oferta o baja calidad forrajera",
+              "Usa distancias recorridas para estimar gasto calórico diario",
+            ]}
             delay="reveal-delay-2"
           />
-          <FeatureCard
+          <RichCard
             icon={<HealthIcon />}
-            title="Alertas de salud"
-            desc="Si un animal sube la temperatura o muestra comportamiento inusual, recibís una alerta para actuar antes de que se complique."
+            title="Salud"
+            subtitle="Gestión proactiva de la salud animal a través de alertas"
+            items={[
+              "Monitoreo de temperatura 24/7: evitá perder crías durante el parto",
+              "Control de ITH: el estrés calórico afecta producción y reproducción",
+              "Disminución de índices reproductivos en vacas y toros",
+              "Bajo condiciones extremas, previene la muerte de animales",
+            ]}
             delay="reveal-delay-3"
           />
         </div>
@@ -106,14 +132,22 @@ export default function LaSolucion() {
   );
 }
 
-function FeatureCard({ icon, title, desc, delay }: {
-  icon: ReactNode; title: string; desc: string; delay: string;
+function RichCard({ icon, title, subtitle, items, delay }: {
+  icon: ReactNode; title: string; subtitle: string; items: string[]; delay: string;
 }) {
   return (
-    <div className={`border border-white/8 rounded-2xl p-8 reveal ${delay} hover:border-rt-green/40 transition-colors duration-300`}>
-      <div className="w-10 h-10 text-rt-green mb-6">{icon}</div>
-      <h3 className="apple-subhead text-white text-xl mb-3">{title}</h3>
-      <p className="apple-body text-white/50">{desc}</p>
+    <div className={`border border-white/8 rounded-2xl p-8 reveal ${delay} hover:border-rt-green/40 transition-colors duration-300 flex flex-col`}>
+      <div className="w-10 h-10 text-rt-green mb-5">{icon}</div>
+      <h3 className="apple-subhead text-white text-xl mb-2">{title}</h3>
+      <p className="text-rt-green text-xs mb-5 leading-snug">{subtitle}</p>
+      <ul className="space-y-2.5 mt-auto">
+        {items.map((item) => (
+          <li key={item} className="flex items-start gap-2.5 text-white/55 text-sm leading-snug">
+            <CheckIcon />
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
@@ -135,11 +169,14 @@ function GpsIcon() {
   );
 }
 
-function CycleIcon() {
+function PastoreoIcon() {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round">
-      <circle cx="12" cy="12" r="10" />
-      <path d="M12 6v6l4 2" />
+      <path d="M12 22V12" />
+      <path d="M12 12C12 12 7 10 5 6c3 0 5.5 1.5 7 4z" />
+      <path d="M12 12C12 12 17 10 19 6c-3 0-5.5 1.5-7 4z" />
+      <path d="M12 17C12 17 8 15.5 6 12c2.5.5 4.5 2 6 5z" />
+      <path d="M12 17C12 17 16 15.5 18 12c-2.5.5-4.5 2-6 5z" />
     </svg>
   );
 }
