@@ -59,44 +59,54 @@ export default function Navbar() {
 function RodeoTechIcon() {
   return (
     <svg
-      width="52"
-      height="34"
-      viewBox="0 0 52 34"
+      width="54"
+      height="36"
+      viewBox="0 0 54 36"
       fill="none"
       aria-label="RodeoTech"
     >
-      {/* Ala izquierda — cuerno estilizado */}
+      {/* Penacho izquierdo — pluma de búho */}
       <path
-        d="M22 17 C17 16 10 13 4 8 C2 7 1 5 2 3"
+        d="M21 13 C17 11 11 8 4 4 C2 3 1 1 2 0"
         stroke="white"
-        strokeWidth="2.4"
+        strokeWidth="2.2"
         strokeLinecap="round"
         fill="none"
       />
-      {/* Ala derecha — espejo */}
+      {/* Penacho derecho — espejo */}
       <path
-        d="M30 17 C35 16 42 13 48 8 C50 7 51 5 50 3"
+        d="M33 13 C37 11 43 8 50 4 C52 3 53 1 52 0"
         stroke="white"
-        strokeWidth="2.4"
+        strokeWidth="2.2"
         strokeLinecap="round"
         fill="none"
       />
-      {/* Cuerpo central — curva inferior de la cabeza */}
-      <path
-        d="M20 19 Q20 28 26 30 Q32 28 32 19"
+      {/* Cara — óvalo */}
+      <ellipse
+        cx="27"
+        cy="21"
+        rx="11"
+        ry="13"
         stroke="white"
-        strokeWidth="2"
-        strokeLinecap="round"
+        strokeWidth="1.6"
         fill="none"
         opacity="0.55"
       />
-      {/* Pin GPS — verde, centrado arriba */}
+      {/* Ojo izquierdo */}
+      <circle cx="22" cy="19" r="3.5" stroke="white" strokeWidth="1.5" fill="none" />
+      <circle cx="22" cy="19" r="1.6" fill="#2E7D32" />
+      {/* Ojo derecho */}
+      <circle cx="32" cy="19" r="3.5" stroke="white" strokeWidth="1.5" fill="none" />
+      <circle cx="32" cy="19" r="1.6" fill="#2E7D32" />
+      {/* Pico */}
       <path
-        d="M26 0 C22.5 0 20 2.8 20 6.5 C20 11.5 26 18 26 18 C26 18 32 11.5 32 6.5 C32 2.8 29.5 0 26 0Z"
-        fill="#2E7D32"
+        d="M25 23 L27 26 L29 23"
+        stroke="white"
+        strokeWidth="1.4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
       />
-      {/* Punto interior del pin */}
-      <circle cx="26" cy="6.5" r="2.8" fill="white" />
     </svg>
   );
 }
