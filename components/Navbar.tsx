@@ -59,52 +59,46 @@ export default function Navbar() {
 function RodeoTechIcon() {
   return (
     <svg
-      width="54"
-      height="36"
-      viewBox="0 0 54 36"
+      width="48"
+      height="44"
+      viewBox="0 0 60 52"
       fill="none"
       aria-label="RodeoTech"
     >
-      {/* Penacho izquierdo — pluma de búho */}
+      {/* Barra horizontal — travesaño del fierro */}
+      <line x1="15" y1="5" x2="45" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
+      {/* Vástago vertical */}
+      <line x1="30" y1="5" x2="30" y2="24" stroke="white" strokeWidth="4" strokeLinecap="round" />
+      {/* Pata izquierda — arco hacia afuera */}
       <path
-        d="M21 13 C17 11 11 8 4 4 C2 3 1 1 2 0"
+        d="M30 24 Q22 26 15 36 Q13 40 11 43"
         stroke="white"
-        strokeWidth="2.2"
+        strokeWidth="3.8"
         strokeLinecap="round"
         fill="none"
       />
-      {/* Penacho derecho — espejo */}
+      {/* Pata derecha — espejo */}
       <path
-        d="M33 13 C37 11 43 8 50 4 C52 3 53 1 52 0"
+        d="M30 24 Q38 26 45 36 Q47 40 49 43"
         stroke="white"
-        strokeWidth="2.2"
+        strokeWidth="3.8"
         strokeLinecap="round"
         fill="none"
       />
-      {/* Cara — óvalo */}
-      <ellipse
-        cx="27"
-        cy="21"
-        rx="11"
-        ry="13"
-        stroke="white"
-        strokeWidth="1.6"
-        fill="none"
-        opacity="0.55"
-      />
-      {/* Ojo izquierdo */}
-      <circle cx="22" cy="19" r="3.5" stroke="white" strokeWidth="1.5" fill="none" />
-      <circle cx="22" cy="19" r="1.6" fill="#2E7D32" />
-      {/* Ojo derecho */}
-      <circle cx="32" cy="19" r="3.5" stroke="white" strokeWidth="1.5" fill="none" />
-      <circle cx="32" cy="19" r="1.6" fill="#2E7D32" />
-      {/* Pico */}
+      {/* Pie izquierdo — pequeño curl */}
       <path
-        d="M25 23 L27 26 L29 23"
+        d="M11 43 Q8 46 6 44"
         stroke="white"
-        strokeWidth="1.4"
+        strokeWidth="3.2"
         strokeLinecap="round"
-        strokeLinejoin="round"
+        fill="none"
+      />
+      {/* Pie derecho — espejo */}
+      <path
+        d="M49 43 Q52 46 54 44"
+        stroke="white"
+        strokeWidth="3.2"
+        strokeLinecap="round"
         fill="none"
       />
     </svg>
