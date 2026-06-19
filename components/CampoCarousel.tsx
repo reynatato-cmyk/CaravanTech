@@ -49,6 +49,7 @@ export default function CampoCarousel() {
                 src={slide.src}
                 alt={slide.alt}
                 fill
+                loading="lazy"
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />

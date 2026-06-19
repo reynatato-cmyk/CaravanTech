@@ -64,22 +64,22 @@ body {
 /* ── Hero entry animations ── */
 .animate-hero-eyebrow {
   opacity: 0;
-  animation: fadeInDown 0.8s cubic-bezier(0.16, 1, 0.3, 1) 1.4s forwards;
+  animation: fadeInDown 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.7s forwards;
 }
 
 .animate-hero-title {
   opacity: 0;
-  animation: fadeInDown 0.9s cubic-bezier(0.16, 1, 0.3, 1) 1.65s forwards;
+  animation: fadeInDown 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.9s forwards;
 }
 
 .animate-hero-sub {
   opacity: 0;
-  animation: fadeIn 0.8s ease 2.0s forwards;
+  animation: fadeIn 0.8s ease 1.2s forwards;
 }
 
 .animate-hero-cta {
   opacity: 0;
-  animation: fadeIn 0.8s ease 2.25s forwards;
+  animation: fadeIn 0.8s ease 1.45s forwards;
 }
 
 /* ── Scroll reveal ── */
@@ -112,7 +112,7 @@ body {
 
 /* ── Hero intro overlay ── */
 .hero-intro-overlay {
-  animation: heroOverlayFade 1.6s cubic-bezier(0.16, 1, 0.3, 1) 0.1s forwards;
+  animation: heroOverlayFade 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.1s forwards;
 }
 
 /* ── Keyframes ── */

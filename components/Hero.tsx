@@ -20,6 +20,7 @@ export default function Hero() {
         muted
         loop
         playsInline
+        preload="none"
         poster="/laescondida1.jpg"
         aria-hidden="true"
       >
