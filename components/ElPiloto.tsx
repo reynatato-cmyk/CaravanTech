@@ -1,15 +1,6 @@
 import Image from "next/image";
 import CampoCarousel from "@/components/CampoCarousel";
 
-const stats = [
-  { value: "+40%", label: "Reducción en tiempos de gestión del rodeo" },
-  { value: "100%", label: "Trazabilidad individual de cada animal" },
-  { value: "0", label: "Pérdidas por animales fuera de zona" },
-];
-
-const delayClasses = ["reveal-delay-1", "reveal-delay-2", "reveal-delay-3"];
-
-
 export default function ElPiloto() {
   return (
     <section id="piloto" className="bg-rt-green-section py-28 px-6">
@@ -18,20 +9,20 @@ export default function ElPiloto() {
         {/* Header */}
         <div className="mb-16 reveal">
           <p className="text-green-400 text-xs tracking-[0.35em] uppercase mb-4 font-semibold">
-            Productores que confían en RodeoTech
+            Primer piloto
           </p>
           <h2
             className="apple-headline text-white mb-6"
             style={{ fontSize: "clamp(2.2rem, 4vw, 3.2rem)" }}
           >
-            Nuestros clientes
+            En implementación
           </h2>
         </div>
 
         {/* Contenido: texto+logo | carrusel */}
         <div className="grid md:grid-cols-2 gap-12 items-start mb-16">
 
-          {/* Izquierda — texto + logo + stats */}
+          {/* Izquierda — texto + logo + estado */}
           <div className="reveal">
             {/* Logo La Escondida */}
             <div className="flex items-center gap-4 mb-8">
@@ -51,30 +42,35 @@ export default function ElPiloto() {
             </div>
 
             <p className="apple-body text-green-100/70 mb-10">
-              El primer despliegue de RodeoTech fue en este establecimiento ganadero real, con necesidades reales. Los resultados confirmaron que la tecnología funciona en el campo argentino.
+              El primer kit de caravanas Bastó está próximo a llegar al campo. Así se va a ver el monitoreo en tiempo real de un rodeo real, en condiciones reales de la Provincia de Buenos Aires.
             </p>
 
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-4">
-              {stats.map((s, i) => (
-                <div
-                  key={i}
-                  className={`reveal ${delayClasses[i]} bg-white/8 border border-white/10 rounded-xl p-5`}
-                >
-                  <p
-                    className="apple-headline text-white leading-none mb-2"
-                    style={{ fontSize: "clamp(1.8rem, 3vw, 2.5rem)" }}
-                  >
-                    {s.value}
-                  </p>
-                  <p className="text-green-200/55 text-xs leading-snug">{s.label}</p>
-                </div>
-              ))}
+            {/* Estado del piloto */}
+            <div className="bg-white/8 border border-white/10 rounded-2xl p-6 reveal reveal-delay-1">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="w-2.5 h-2.5 rounded-full bg-rt-green animate-pulse shrink-0" />
+                <p className="text-white font-semibold text-sm tracking-wide">Piloto en proceso de implementación</p>
+              </div>
+              <ul className="space-y-2.5">
+                {[
+                  "Kit de caravanas Bastó asignado al establecimiento",
+                  "Instalación pendiente de llegada del equipo al campo",
+                  "Resultados reales disponibles una vez iniciado el monitoreo",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2.5 text-green-200/55 text-sm leading-snug">
+                    <svg className="w-3.5 h-3.5 shrink-0 mt-0.5 text-rt-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M20 6 9 17l-5-5" />
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
 
-          {/* Derecha — carrusel */}
+          {/* Derecha — carrusel con aclaración */}
           <div className="reveal reveal-delay-2">
+            <p className="text-green-200/45 text-xs tracking-[0.2em] uppercase mb-3">El campo donde se implementará</p>
             <CampoCarousel />
           </div>
 
