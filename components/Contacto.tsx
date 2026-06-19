@@ -4,9 +4,6 @@ export default function Contacto() {
   return (
     <section id="contacto" className="bg-rt-dark py-28 px-6">
       <div className="max-w-3xl mx-auto text-center reveal">
-        <p className="font-display text-rt-green text-xs tracking-[0.35em] uppercase mb-6">
-          Contacto
-        </p>
         <h2
           className="apple-headline text-white mb-6"
           style={{ fontSize: "clamp(2.5rem, 6vw, 5rem)" }}
