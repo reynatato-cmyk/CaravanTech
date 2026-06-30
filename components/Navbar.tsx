@@ -21,15 +21,15 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between">
-        {/* Logo — estilo Bastó */}
+        {/* Logo Bastó — marca de ganado + texto hasta que llegue logo oficial */}
         <a href="#" className="flex items-center gap-3">
-          <RodeoTechIcon />
+          <BastoIcon />
           <div className="flex flex-col leading-none">
-            <span className="font-display font-bold text-[1.1rem] tracking-wide text-white uppercase">
-              Rodeo<span className="text-rt-green">Tech</span>
+            <span className="font-display font-bold text-[1.15rem] tracking-[0.08em] text-white uppercase">
+              Bast<span className="text-rt-green">ó</span>
             </span>
             <span className="font-display text-[0.55rem] tracking-[0.28em] text-white/40 uppercase mt-[3px]">
-              Ganado Inteligente
+              Caravanas IoT
             </span>
           </div>
         </a>
@@ -49,58 +49,29 @@ export default function Navbar() {
           rel="noopener noreferrer"
           className="text-[0.7rem] font-display font-semibold tracking-widest uppercase border border-white/30 hover:border-rt-green hover:text-rt-green text-white px-5 py-2.5 rounded-full transition-all duration-300"
         >
-          Escribinos
+          Contactanos
         </a>
       </div>
     </header>
   );
 }
 
-function RodeoTechIcon() {
+function BastoIcon() {
   return (
     <svg
       width="48"
       height="44"
       viewBox="0 0 60 52"
       fill="none"
-      aria-label="RodeoTech"
+      aria-label="Bastó"
     >
-      {/* Barra horizontal — travesaño del fierro */}
+      {/* Marca de ganado — fierro gaucho */}
       <line x1="15" y1="5" x2="45" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
-      {/* Vástago vertical */}
       <line x1="30" y1="5" x2="30" y2="24" stroke="white" strokeWidth="4" strokeLinecap="round" />
-      {/* Pata izquierda — arco hacia afuera */}
-      <path
-        d="M30 24 Q22 26 15 36 Q13 40 11 43"
-        stroke="white"
-        strokeWidth="3.8"
-        strokeLinecap="round"
-        fill="none"
-      />
-      {/* Pata derecha — espejo */}
-      <path
-        d="M30 24 Q38 26 45 36 Q47 40 49 43"
-        stroke="white"
-        strokeWidth="3.8"
-        strokeLinecap="round"
-        fill="none"
-      />
-      {/* Pie izquierdo — pequeño curl */}
-      <path
-        d="M11 43 Q8 46 6 44"
-        stroke="white"
-        strokeWidth="3.2"
-        strokeLinecap="round"
-        fill="none"
-      />
-      {/* Pie derecho — espejo */}
-      <path
-        d="M49 43 Q52 46 54 44"
-        stroke="white"
-        strokeWidth="3.2"
-        strokeLinecap="round"
-        fill="none"
-      />
+      <path d="M30 24 Q22 26 15 36 Q13 40 11 43" stroke="white" strokeWidth="3.8" strokeLinecap="round" fill="none" />
+      <path d="M30 24 Q38 26 45 36 Q47 40 49 43" stroke="white" strokeWidth="3.8" strokeLinecap="round" fill="none" />
+      <path d="M11 43 Q8 46 6 44" stroke="white" strokeWidth="3.2" strokeLinecap="round" fill="none" />
+      <path d="M49 43 Q52 46 54 44" stroke="white" strokeWidth="3.2" strokeLinecap="round" fill="none" />
     </svg>
   );
 }

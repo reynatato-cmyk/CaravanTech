@@ -8,10 +8,10 @@ export default function Contacto() {
           className="apple-headline text-white mb-6"
           style={{ fontSize: "clamp(2.5rem, 6vw, 5rem)" }}
         >
-          ¿Cuántos terneros<br />perdiste este año?
+          Tu rodeo merece<br />tecnología real.
         </h2>
         <p className="apple-body text-white/40 mb-12 max-w-md mx-auto">
-          Contanos el tamaño de tu rodeo y te armamos la propuesta. Asesoramiento y venta 100% por WhatsApp Business.
+          Contanos el tamaño de tu establecimiento y te asesoramos sin compromiso. Respondemos rápido.
         </p>
         <a
           href={WA_URL}
@@ -20,15 +20,15 @@ export default function Contacto() {
           className="inline-flex items-center gap-4 bg-rt-green hover:bg-rt-green-deep text-white font-display font-semibold text-lg px-10 py-5 rounded-full transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(46,125,50,0.45)]"
         >
           <WaIcon />
-          Escribinos por WhatsApp
+          Hablá con Bastó
         </a>
       </div>
 
       <div className="mt-24 pt-8 border-t border-white/5 max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-white/20 text-sm font-display">
         <span>
-          RODEO<span className="text-rt-green/50">TECH</span>
+          BAST<span className="text-rt-green/50">Ó</span>
         </span>
-        <span>Lincoln, Buenos Aires — Argentina</span>
+        <span>Argentina</span>
         <span>© 2026</span>
       </div>
     </section>

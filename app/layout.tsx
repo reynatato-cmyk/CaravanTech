@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "RodeoTech — Caravanas Inteligentes para tu Rodeo",
+  title: "Bastó — Caravanas IoT para Ganadería Inteligente",
   description:
-    "Monitoreo GPS en tiempo real, detección de celo y alertas de salud para tu hacienda. Lincoln, Buenos Aires.",
+    "Monitoreo GPS en tiempo real, detección de celo y alertas de salud para tu hacienda. Tecnología ganadera hecha en Argentina.",
 };
 
 export default function RootLayout({

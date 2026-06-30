@@ -4,9 +4,9 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 
 const slides = [
-  { type: "image" as const, src: "/laescondida1.jpg", alt: "Campo La Escondida — Lincoln" },
-  { type: "image" as const, src: "/laescondida2.jpg", alt: "Campo La Escondida — hacienda" },
-  { type: "video" as const, src: "/laescondida3.mov" },
+  { type: "image" as const, src: "/basto2.jpg", alt: "Hacienda con caravanas Bastó — campo abierto" },
+  { type: "image" as const, src: "/basto5.jpg", alt: "Rodeo de Angus con caravanas Bastó en la pampa" },
+  { type: "image" as const, src: "/basto1.jpg", alt: "Caravanas Bastó aplicadas en rodeo" },
 ];
 
 const INTERVAL = 5000;

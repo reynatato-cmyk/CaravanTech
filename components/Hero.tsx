@@ -4,48 +4,35 @@ import { WA_URL } from "@/lib/constants";
 export default function Hero() {
   return (
     <section className="relative h-screen min-h-[640px] flex items-center justify-center overflow-hidden">
-      {/* Imagen de fondo optimizada — fallback cuando el video no carga en mobile */}
+      {/* Imagen hero — vaca negra con dispositivo Bastó visible */}
       <Image
-        src="/laescondida1.jpg"
-        alt=""
+        src="/basto4.jpg"
+        alt="Caravana Bastó en hacienda"
         fill
         priority
-        className="object-cover"
+        className="object-cover object-center hero-video-zoom"
         sizes="100vw"
       />
-      {/* Video 4K — se superpone sobre la imagen, poster = misma imagen de fallback */}
-      <video
-        className="absolute inset-0 w-full h-full object-cover hero-video-zoom z-[1]"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="none"
-        poster="/laescondida1.jpg"
-        aria-hidden="true"
-      >
-        <source src="/hero.mp4" type="video/mp4" />
-      </video>
 
-      {/* Overlay — legibilidad del texto sobre el video */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/25 to-black/80 z-[2]" />
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/85 z-[2]" />
 
       {/* Intro overlay — se desvanece al cargar */}
       <div className="hero-intro-overlay absolute inset-0 bg-black z-20 pointer-events-none" />
 
-      {/* ─── Contenido centrado ── */}
+      {/* Contenido */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <p className="animate-hero-eyebrow text-rt-green text-xs tracking-[0.4em] uppercase mb-8 font-semibold">
-          Lincoln · Buenos Aires
+          Tecnología ganadera · Argentina
         </p>
         <h1
           className="animate-hero-title apple-headline text-white mb-6"
           style={{ fontSize: "clamp(2.8rem, 6vw, 5.5rem)" }}
         >
-          Monitoreo inteligente<br />de hacienda en tiempo real.
+          Cada animal,<br />conectado.
         </h1>
         <p className="animate-hero-sub apple-body text-white/65 mb-12 max-w-xl mx-auto">
-          Caravanas IoT + plataforma digital para productores ganaderos de la Provincia de Buenos Aires. Tu rodeo visible desde el celular, en tiempo real.
+          Caravanas IoT de largo alcance para monitoreo ganadero en tiempo real. GPS, detección de celo y alertas de salud — todo desde el celular.
         </p>
         <div className="animate-hero-cta">
           <a
@@ -55,13 +42,13 @@ export default function Hero() {
             className="inline-flex items-center gap-3 bg-rt-green hover:bg-rt-green-deep text-white font-semibold text-base px-8 py-4 rounded-full transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_4px_32px_rgba(46,125,50,0.45)]"
           >
             <WaIcon />
-            Consultá por WhatsApp
+            Hablá con Bastó
           </a>
         </div>
       </div>
 
       {/* Scroll hint */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/25">
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/25 z-10">
         <span className="text-[10px] tracking-[0.3em] uppercase">Scroll</span>
         <div className="w-px h-10 bg-gradient-to-b from-white/25 to-transparent" />
       </div>
