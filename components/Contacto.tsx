@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { WA_URL } from "@/lib/constants";
 
 export default function Contacto() {
@@ -25,9 +26,13 @@ export default function Contacto() {
       </div>
 
       <div className="mt-24 pt-8 border-t border-white/5 max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-white/20 text-sm font-display">
-        <span>
-          BAST<span className="text-rt-green/50">Ó</span>
-        </span>
+        <Image
+          src="/logo.png"
+          alt="Bastó"
+          width={80}
+          height={36}
+          className="h-7 w-auto opacity-40"
+        />
         <span>Argentina</span>
         <span>© 2026</span>
       </div>
