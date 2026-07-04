@@ -14,7 +14,7 @@ export default function PlataformaDemo() {
             La plataforma Bastó en acción
           </h2>
           <p className="apple-body text-white/40 max-w-xl mx-auto">
-            Mirá cómo el productor visualiza su rodeo, gestiona potreros y recibe alertas — todo en tiempo real desde cualquier dispositivo.
+            Mirá cómo el productor visualiza su rodeo, gestiona lotes y recibe alertas — todo en tiempo real desde cualquier dispositivo.
           </p>
         </div>
 

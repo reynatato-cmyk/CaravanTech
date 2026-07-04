@@ -70,11 +70,11 @@ export default function LaSolucion() {
             title="Pastoreo"
             subtitle="Selección de lotes óptimos e índices verdes NDVI"
             items={[
-              "Selección de potreros óptimos por índices verdes (NDVI)",
+              "Selección de lotes óptimos por índices verdes (NDVI)",
               "Estimación de biomasa y cálculo de carga animal",
               "Detección de áreas sobrepastoreadas por dinámicas GPS",
               "Calorías consumidas y distancia recorrida diaria",
-              "Alertas de días de ocupación y descanso por potrero",
+              "Alertas de días de ocupación y descanso por lote",
             ]}
             delay="reveal-delay-2"
           />
