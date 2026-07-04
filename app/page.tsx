@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import ElProblema from "@/components/ElProblema";
 import LaSolucion from "@/components/LaSolucion";
 import ComoFunciona from "@/components/ComoFunciona";
+import PlataformaDemo from "@/components/PlataformaDemo";
 import ElPiloto from "@/components/ElPiloto";
 import Contacto from "@/components/Contacto";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
@@ -17,6 +18,7 @@ export default function Home() {
         <ElProblema />
         <LaSolucion />
         <ComoFunciona />
+        <PlataformaDemo />
         <ElPiloto />
         <Contacto />
       </main>
