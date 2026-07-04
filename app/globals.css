@@ -1,23 +1,19 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Colors */
-  --color-rt-green: #2E7D32;
-  --color-rt-green-deep: #1B5E20;
-  --color-rt-green-section: #1A3A1C;
+  /* Paleta oficial Bastó — Manual de Identidad Corporativa */
+  --color-rt-green: #8DB42F;        /* Verde principal */
+  --color-rt-green-deep: #7A9E28;   /* Verde hover */
+  --color-rt-green-section: #112A49; /* Azul marino — secciones oscuras */
   --color-rt-dark: #0D0D0D;
   --color-rt-section: #111111;
+  --color-basto-steel: #516C7F;     /* Gris acero */
+  --color-basto-navy: #112A49;      /* Azul marino */
 
-  /*
-    System font stack — idéntica a la que usa Apple.
-    En macOS e iOS renderiza SF Pro automáticamente.
-    En Windows usa Segoe UI. En Android usa Roboto.
-  */
+  /* Tipografía corporativa: Montserrat (manual de marca) */
   --font-sans:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Display",
-    "SF Pro Text",
+    var(--font-montserrat),
+    "Montserrat",
     "Segoe UI",
     Roboto,
     "Helvetica Neue",

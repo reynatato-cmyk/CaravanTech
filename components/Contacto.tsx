@@ -18,7 +18,7 @@ export default function Contacto() {
           href={WA_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-4 bg-rt-green hover:bg-rt-green-deep text-white font-display font-semibold text-lg px-10 py-5 rounded-full transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(46,125,50,0.45)]"
+          className="inline-flex items-center gap-4 bg-rt-green hover:bg-rt-green-deep text-white font-display font-semibold text-lg px-10 py-5 rounded-full transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_8px_40px_rgba(141,180,47,0.45)]"
         >
           <WaIcon />
           Hablá con Bastó
