@@ -10,7 +10,7 @@ export default function Hero() {
         alt="Caravana Bastó en hacienda"
         fill
         priority
-        className="object-cover object-center hero-video-zoom"
+        className="object-cover object-[center_30%] hero-video-zoom"
         sizes="100vw"
       />
 

@@ -117,7 +117,7 @@ body {
 
 /* ── Keyframes ── */
 @keyframes heroZoomOut {
-  from { transform: scale(1.55); }
+  from { transform: scale(1.12); }
   to   { transform: scale(1.0); }
 }
 

@@ -2,57 +2,55 @@ import CampoCarousel from "@/components/CampoCarousel";
 
 export default function ElPiloto() {
   return (
-    <section id="piloto" className="bg-rt-green-section py-28 px-6">
+    <section id="piloto" className="bg-rt-green-section py-24 px-6">
       <div className="max-w-6xl mx-auto">
 
         {/* Header */}
-        <div className="mb-16 reveal">
-          <p className="text-green-400 text-[0.65rem] tracking-[0.35em] uppercase mb-4 font-semibold">
+        <div className="mb-12 reveal">
+          <p className="text-green-400 text-[0.65rem] tracking-[0.35em] uppercase mb-3 font-semibold">
             Bastó en el campo
           </p>
           <h2
-            className="apple-headline text-white mb-6"
+            className="apple-headline text-white"
             style={{ fontSize: "clamp(2.2rem, 4vw, 3.2rem)" }}
           >
             Funcionando en establecimientos<br />de toda Argentina.
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-start mb-16">
+        {/* Grilla asimétrica: carrusel dominante + stats */}
+        <div className="grid md:grid-cols-[3fr_2fr] gap-8 items-start">
 
-          {/* Izquierda — datos reales */}
+          {/* Izquierda — carrusel */}
           <div className="reveal">
-            <p className="apple-body text-green-100/70 mb-10 text-lg leading-relaxed">
-              Miles de animales monitoreados en tiempo real. Productores ganaderos que ya toman decisiones con datos — no con suposiciones.
+            <CampoCarousel />
+          </div>
+
+          {/* Derecha — texto + stats verticales */}
+          <div className="reveal reveal-delay-2 flex flex-col gap-8">
+            <p className="apple-body text-green-100/60 text-base leading-relaxed">
+              Miles de animales monitoreados en tiempo real. Productores que ya toman decisiones con datos — no con suposiciones.
             </p>
 
-            {/* Stats de Bastó */}
-            <div className="grid grid-cols-2 gap-4">
+            <div className="flex flex-col">
               {[
                 { value: "+5.000", label: "Animales monitoreados activamente" },
-                { value: "LoRa", label: "Conectividad de largo alcance sin internet" },
-                { value: "24/7", label: "Monitoreo continuo, alertas en tiempo real" },
+                { value: "LoRa",   label: "Conectividad sin internet, largo alcance" },
+                { value: "24/7",   label: "Monitoreo continuo y alertas en tiempo real" },
                 { value: "SENASA", label: "Compatible con trazabilidad oficial" },
               ].map((s, i) => (
-                <div
-                  key={i}
-                  className={`reveal reveal-delay-${(i % 3) + 1} bg-white/8 border border-white/10 rounded-xl p-5`}
-                >
+                <div key={i} className="border-t border-white/10 py-5">
                   <p
-                    className="apple-headline text-white leading-none mb-2"
-                    style={{ fontSize: "clamp(1.4rem, 2.5vw, 2rem)" }}
+                    className="apple-headline text-white leading-none mb-1"
+                    style={{ fontSize: "clamp(1.5rem, 2.5vw, 2.1rem)" }}
                   >
                     {s.value}
                   </p>
-                  <p className="text-green-200/55 text-xs leading-snug">{s.label}</p>
+                  <p className="text-green-200/50 text-xs leading-snug">{s.label}</p>
                 </div>
               ))}
+              <div className="border-t border-white/10" />
             </div>
-          </div>
-
-          {/* Derecha — carrusel con fotos reales */}
-          <div className="reveal reveal-delay-2">
-            <CampoCarousel />
           </div>
 
         </div>
