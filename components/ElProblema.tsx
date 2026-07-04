@@ -47,15 +47,15 @@ export default function ElProblema() {
 
           {/* Problema 3 */}
           <div className="reveal reveal-delay-3 pt-10 md:pl-12 pb-12">
-            <p className="text-[#6e6e73] text-[0.65rem] tracking-[0.35em] uppercase mb-6">Regulación SENASA</p>
+            <p className="text-[#6e6e73] text-[0.65rem] tracking-[0.35em] uppercase mb-6">Mercados premium</p>
             <h3
               className="apple-headline text-[#1d1d1f] mb-4"
               style={{ fontSize: "clamp(1.8rem, 3vw, 2.4rem)", letterSpacing: "-0.025em" }}
             >
-              Obligatorio desde 2026.
+              El mundo pide trazabilidad.
             </h3>
             <p className="apple-body text-[#6e6e73] text-sm leading-relaxed">
-              SENASA exige caravanas electrónicas para bovinos. El que no digitalice su rodeo empieza a quedar fuera del sistema comercial.
+              Los mercados más exigentes requieren carne sustentable y carbono neutral con la cadena documentada. Sin tecnología, tu hacienda no califica — y SENASA ya lo exige desde 2026.
             </p>
           </div>
 
