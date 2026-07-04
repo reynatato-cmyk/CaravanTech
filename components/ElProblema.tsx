@@ -30,15 +30,15 @@ export default function ElProblema() {
 
           {/* Problema 2 */}
           <div className="reveal reveal-delay-2 pt-10 md:pl-16 pb-12">
-            <p className="text-[#6e6e73] text-[0.65rem] tracking-[0.35em] uppercase mb-6">Mercados premium</p>
+            <p className="text-[#6e6e73] text-[0.65rem] tracking-[0.35em] uppercase mb-6">Identificación vs. inteligencia</p>
             <h3
               className="apple-headline text-[#1d1d1f] mb-4"
               style={{ fontSize: "clamp(1.8rem, 3vw, 2.6rem)", letterSpacing: "-0.025em" }}
             >
-              El mundo pide trazabilidad.
+              Un número no es suficiente.
             </h3>
             <p className="apple-body text-[#6e6e73] text-sm leading-relaxed">
-              Los mercados más exigentes requieren carne sustentable y carbono neutral con la cadena documentada. Sin tecnología, tu hacienda no califica — y SENASA ya lo exige desde 2026.
+              Las caravanas electrónicas de baja frecuencia solo dan un número de identificación. Los dispositivos Bastó son de alta frecuencia: almacenan y procesan información real — salud, comportamiento, pastoreo, trazabilidad. Eso es ganadería inteligente.
             </p>
           </div>
 

@@ -126,7 +126,7 @@ export default function LaSolucion() {
         <div className="reveal mt-8 bg-rt-green/10 border border-rt-green/20 rounded-xl px-8 py-6 text-center">
           <p className="apple-body text-white/80">
             <strong className="text-white">Trazabilidad extendida con blockchain.</strong>{" "}
-            Bastó habilita el acceso a mercados premium internacionales que exigen carne sustentable y carbono neutral — con toda la cadena documentada.
+            Bastó habilita el acceso a mercados premium internacionales que exigen carne sustentable y carbono neutral — con salud, comportamiento y trazabilidad documentados en tiempo real.
           </p>
         </div>
 
