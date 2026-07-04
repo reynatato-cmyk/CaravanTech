@@ -32,7 +32,7 @@ export default function Hero() {
           Cada animal,<br />conectado.
         </h1>
         <p className="animate-hero-sub apple-body text-white/65 mb-12 max-w-xl mx-auto">
-          Caravanas IoT de largo alcance para monitoreo ganadero en tiempo real. GPS, detección de celo y alertas de salud — todo desde el celular.
+          Caravanas IoT de largo alcance para monitoreo ganadero en tiempo real. Salud, bienestar, comportamiento en pastoreo y producción de pasto — todo desde el celular.
         </p>
         <div className="animate-hero-cta">
           <a

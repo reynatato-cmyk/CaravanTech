@@ -18,16 +18,16 @@ export default function ElProblema() {
 
           {/* Problema 1 — cifra como elemento visual */}
           <div className="reveal reveal-delay-1 pt-10 md:pr-12 pb-12 border-b md:border-b-0 md:border-r border-[#1d1d1f]/8">
-            <p className="text-[#6e6e73] text-[0.65rem] tracking-[0.35em] uppercase mb-6">Pérdida reproductiva</p>
+            <p className="text-[#6e6e73] text-[0.65rem] tracking-[0.35em] uppercase mb-6">Pérdida productiva</p>
             <p
               className="font-display font-bold text-[#1d1d1f] leading-none mb-4"
               style={{ fontSize: "clamp(2.8rem, 5vw, 4.2rem)", letterSpacing: "-0.035em" }}
             >
               USD 8.000
             </p>
-            <h3 className="apple-subhead text-[#1d1d1f] text-lg mb-3">Celos sin detectar</h3>
+            <h3 className="apple-subhead text-[#1d1d1f] text-lg mb-3">Animales sin monitoreo</h3>
             <p className="apple-body text-[#6e6e73] text-sm leading-relaxed">
-              En un rodeo de 200 vacas, perder 10 celos por temporada son 10 terneros menos — sin que te des cuenta, sin que haya un registro.
+              Sin datos en tiempo real, los problemas de salud y comportamiento se detectan tarde. El costo de un animal perdido o un lote mal manejado supera con creces el de la tecnología.
             </p>
           </div>
 
